@@ -16,22 +16,19 @@ padding: 0;
 box-sizing: border-box;
 }
 
-header{
-    margin-top: 2.5vw;
-}
 
 a{
     color: var(--cor-texto-link);
     text-decoration: none;
 }
 .marginSite{
-    margin: 0 10vw;
+    margin: 2,5vw 10vw;
 }
 .flex{
     display: flex;
     align-items: center;
 }
-/*Começo Cabeçalho Header*/
+/*Cabeçalho Header*/
 .containerMenuPrincipal{
     margin-left: 5vw;
     justify-content: space-between;
@@ -51,6 +48,7 @@ a{
 
 .containerBuscar input{
     border: none;
+    color: var(--cor-titulo);
 }
 
 .containerBuscar input:focus{
@@ -77,11 +75,17 @@ a{
 
 /*Fim Cabeçalho  (Header)*/
 
+/*apresentação (titulo)*/
 h1{
     color:var(--cor-titulo);
     font-weight: 400;
     font-size: 1.4 rem; 
 }
+.containerApresentacao{
+align-items: end;
+justify-content: space-between;
+}
+
 .containerApresentacao h2{
     color: var (--cor-titulo);
 font-weight: 400;
@@ -90,5 +94,10 @@ max-width: 950px;
 }
 .containerApresentação img{
     min-width: 50px;
+}
+
+.containerApresentacao p{
+    color: var(--cor-titulo);
+    max-width: 236px;
 }
 /*Apresentação (titilo)*/
