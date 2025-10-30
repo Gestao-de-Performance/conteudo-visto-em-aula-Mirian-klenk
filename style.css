@@ -1,12 +1,29 @@
+:root{
+    --cor-texto-link:#5A13B4;
+    --cor-titulo:#3b1270;
+    --cor-testo-destaque: #8E35FF;
+
+    --cor-buscar:#5913b470;
+
+    --cor-fundo-escolha-curso: #3b1270;
+    --cor-inscreva-se: #8E35FF;
+
+}
+
 *{
 margin: 0;
 padding: 0;
+box-sizing: border-box;
 }
 
 header{
     margin-top: 2.5vw;
 }
 
+a{
+    color: var(--cor-texto-link);
+    text-decoration: none;
+}
 .marginSite{
     margin: 0 10vw;
 }
@@ -14,11 +31,64 @@ header{
     display: flex;
     align-items: center;
 }
-/*Header*/
+/*Começo Cabeçalho Header*/
 .containerMenuPrincipal{
     margin-left: 5vw;
     justify-content: space-between;
     width: 100%;
 }
 
-/*Fim Header*/
+.containerBlogGrad, .containerBuscarAmb{
+    gap: 2vw;
+}
+
+.containerBuscar{
+    border:1px, solid, var(--cor-buscar);
+    padding: 5px 15px;
+    min-width: 220px;
+    justify-content: space-between;
+}
+
+.containerBuscar input{
+    border: none;
+}
+
+.containerBuscar input:focus{
+    outline: none;
+}
+
+.containerBuscar input::placeholder{
+    color: var(--cor-buscar);
+}
+
+.containerBuscar button{
+    background-color: transparent;
+    border: none;
+    width: 15px;
+    height: 15px;
+}
+    .containerBuscar button img{
+       width: 100%; 
+    }
+
+    .containerBuscarAmb a{
+        gap: 0.5vw;
+    }
+
+/*Fim Cabeçalho  (Header)*/
+
+h1{
+    color:var(--cor-titulo);
+    font-weight: 400;
+    font-size: 1.4 rem; 
+}
+.containerApresentacao h2{
+    color: var (--cor-titulo);
+font-weight: 400;
+font-size: 9rem;
+max-width: 950px;
+}
+.containerApresentação img{
+    min-width: 50px;
+}
+/*Apresentação (titilo)*/
